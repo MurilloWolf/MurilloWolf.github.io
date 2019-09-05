@@ -96,10 +96,17 @@ figure {
   align-items: center;
 }
 
-img {
+.image {
   border-radius: 50%;
   width: 300px;
   height: 300px;
+  cursor: pointer;
+}
+
+.image:hover {
+  transform: translate(0px, -10px);
+  box-shadow: 1px 0px 20px #04ff79;
+  transition: all 0.2s ease-in-out;
 }
 
 figcaption {
