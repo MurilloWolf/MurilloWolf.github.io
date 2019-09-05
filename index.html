@@ -18,83 +18,34 @@
     <header>
       <h1>Search <span>HUB</span></h1>
       <div style="width: 50%">
-        <form action="" class="form-container">
-          <input type="text" placeholder="User Name" />
-          <button type="button"><i class="my-icon fas fa-search"> </i></button>
+        <form class="form-container">
+          <input type="text" placeholder="User Name..." id="input-search" />
+          <button type="button" onclick="submitForm()">
+            <i class="my-icon fas fa-search fa-2x"> </i>
+          </button>
         </form>
       </div>
     </header>
     <main class="main-container">
       <section class="left">
         <!-- LEFT SIDE -->
-        <figure id='figure'>
-          
-          <figcaption id="avatar-name" class="avatar-name">
-            Vinicius Zika
-          </figcaption>
-          <figcaption><sup id='avatar-desc'></sup></figcaption>
+        <figure id="figure">
+          <a target="_blank" hrf="" >
+          <img id='avatar-image' class='image'></img>
+          </a>
+          <figcaption id="avatar-name" class="avatar-name"></figcaption>
+          <figcaption><sup id="avatar-desc"></sup></figcaption>
         </figure>
       </section>
-     <section class="right">
-     <div class="mobile">
-        <h2><i class="fas fa-folder-open"> </i>Repositories</h2>
-        <div id="rep-container" class="repositories-container">
-          <div class="rep-item">
-            <p class="rep-item-title">Title</p>
-            
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s
-            </p>
-          </div>
-
-          <div class="rep-item">
-            <p class="rep-item-title">Title</p>
-            <p class="rep-item-desc">
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s
-            </p>
-          </div>
-          <div class="rep-item">
-            <p class="rep-item-title">Title</p>
-            <p class="rep-item-desc">
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s
-            </p>
-          </div>
-          <div class="rep-item">
-            <p class="rep-item-title">Title</p>
-            <p class="rep-item-desc">
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s
-            </p>
-          </div>  <div class="rep-item">
-            <p class="rep-item-title">Title</p>
-            <p class="rep-item-desc">
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s
-            </p>
-          </div>  <div class="rep-item">
-            <p class="rep-item-title">Title</p>
-            <p class="rep-item-desc">
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s
-            </p>
-          </div>
-          
+      <section class="right">
+        <div class="mobile">
+          <h2><i class="fas fa-folder-open"> </i>Repositories<span style='margin: 0 1rem;' id='qtd-rep'></span> </h2>
          
+          <div id="rep-container" class="repositories-container"></div>
         </div>
-    </div>
-
-      </section> 
+      </section>
     </main>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src='./public/js/useApi.js'> </script>
+    <script src="./public/js/useApi.js"></script>
   </body>
-
 </html>
