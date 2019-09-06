@@ -6,7 +6,7 @@ function submitForm() {
   const repositorios = document.getElementById("rep-container");
   const quantidadeRep = document.getElementById("qtd-rep");
   const userName = document.getElementById("input-search").value;
-  const link = document.getElementsByTagName("a");
+  const link = document.getElementsByTagName("a")[0];
 
   console.log(link);
 
