@@ -158,7 +158,7 @@ i {
 }
 .my-icon {
   margin: 0 !important;
-  color: blueviolet;
+  color: #7c3ead;
 }
 .rep-item-title {
   height: auto;
@@ -172,12 +172,12 @@ i {
 }
 
 ::-webkit-scrollbar {
-  background: transparent;
+  background: #7c3ead;
 }
 
 ::-webkit-scrollbar-thumb {
   /* 5 */
-  background: #080b0f;
+  background: #7c3ead;
 }
 
 @media screen and (max-width: 1000px) {
